@@ -1,9 +1,7 @@
 .header {
     display: flex;
     flex-direction: column;
-    left: 16px;
-    position: relative;
-    right: 16px;
+    margin-left: 18px;
     .header__container-img {
         background: #CBD2D9;
         border-radius: 50%;
@@ -76,8 +74,7 @@
         }
     }
     @media(min-width: 1020px) {
-        left: 128px;
-        right: 128px;
+        margin-left: 128px;
         width: 781px;
     }
 
