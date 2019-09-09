@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap');
 @import "_normalize";
 @import "_variables";
 @import "_grid";
@@ -6,6 +7,7 @@
 
 html {
   box-sizing: border-box;
+  font-family: Poppins;
   font-size: 16px;
 }
 
@@ -14,6 +16,13 @@ html {
 }
 
 body {
-  color: $yellow;
-  background: $violet;
+  background: $white;
+}
+
+h1, h2, h3 {
+  color: $violet;
+}
+
+p, li {
+  color: $blackGrey;
 }

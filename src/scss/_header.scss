@@ -1,0 +1,42 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    left: 16px;
+    position: absolute;
+    top: 64px;
+    .header__container-img {
+        background: #CBD2D9;
+        border-radius: 50%;
+        display: inline-block;
+        height: 120px;
+        position: relative;
+        width: 120px;
+        .header__img {
+            border: 3px solid #FFF;
+            border-radius: 50%;
+            height: 100px;
+            left: 50%;
+            padding: 1px;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 100px;
+        }
+    }
+    .header__title {
+        font-size: 1.615rem;
+        font-weight: 600;
+        line-height: 36px;
+        margin-top: 20px;
+    }
+    .header__paragraph {
+        font-weight: 300;
+        font-size: 0.9rem;
+        line-height: 26px;
+        margin-top: 10px;
+    }
+    .header__link-mail {
+        margin-top: 40px;
+    }
+
+}
