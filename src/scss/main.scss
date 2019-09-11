@@ -13,7 +13,9 @@ html {
   font-size: 16px;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -23,19 +25,29 @@ body {
 
 .wrapper {
   width: 95%;
+
   @media(min-width: 1020px) {
     border: 20px solid $violet;
     width: 100%;
   }
 }
 
-h1, h2, h3 {
+.section {
+  display: flex;
+  flex-direction: column;
+}
+
+h1,
+h2,
+h3 {
   color: $violet;
 }
 
-p, li {
+p,
+li {
   color: $blackGrey;
-  @media(min-width: 1020px){
+
+  @media(min-width: 1020px) {
     color: $violet;
   }
 }
