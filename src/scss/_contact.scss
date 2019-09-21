@@ -54,6 +54,10 @@
     }
   }
 
+  &__link-img {
+    cursor: pointer;
+  }
+
   &__link-mail {
     border-bottom: 2px solid $blue;
     color: $blue;
