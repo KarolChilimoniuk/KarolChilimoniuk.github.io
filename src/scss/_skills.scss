@@ -1,7 +1,9 @@
 .section-skills {
   display: flex;
-  margin-left: 18px;
   margin-top: 140px;
+  max-width: 1187px;
+  padding-left: 18px;
+  width: 95%;
 
   .skills__title {
     text-align: center;
@@ -20,8 +22,10 @@
     background-color: #CBD2D9;
     border: 0;
     height: 2px;
+    margin: 0;
+    margin-top: 20px;
     opacity: 0.5;
-    width: 100%;
+    width: 92%;
   }
 
   .skills__description {
@@ -59,7 +63,7 @@
     .skills__description-list {
       list-style: none;
       padding: 0;
-      width: 60%;
+      width: 40%;
 
       .skills__description-element {
         font-size: 0.75rem;
@@ -90,8 +94,8 @@
   }
 
   @media (min-widtH: 1024px) {
-    margin-left: 128px;
     margin-right: 128px;
     max-width: 1184px;
+    padding-left: 128px;
   }
 }
