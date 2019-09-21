@@ -95,13 +95,15 @@
           margin-right: 10px;
         }
 
-        .recentProjects__span {
+        .recentProjects__demoLink,
+        .recentProjects__codeLink {
           color: $blue;
           display: flex;
           flex-direction: space-between;
           font-size: 0.9rem;
           font-weight: 500;
           line-height: 28px;
+          text-decoration: none;
 
           &:nth-child(1) {
             border-right: 1px solid $blue;
