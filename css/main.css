@@ -617,7 +617,8 @@ template {
         padding-right: 30px; }
         .section-recentProjects .recentProjects__description .recentProjects__demo .recentProjects__demo-paragraph .recentProjects__demo-img {
           margin-right: 10px; }
-        .section-recentProjects .recentProjects__description .recentProjects__demo .recentProjects__demo-paragraph .recentProjects__span {
+        .section-recentProjects .recentProjects__description .recentProjects__demo .recentProjects__demo-paragraph .recentProjects__demoLink,
+        .section-recentProjects .recentProjects__description .recentProjects__demo .recentProjects__demo-paragraph .recentProjects__codeLink {
           color: #0593FB;
           display: -webkit-box;
           display: -ms-flexbox;
@@ -628,17 +629,21 @@ template {
                   flex-direction: space-between;
           font-size: 0.9rem;
           font-weight: 500;
-          line-height: 28px; }
-          .section-recentProjects .recentProjects__description .recentProjects__demo .recentProjects__demo-paragraph .recentProjects__span:nth-child(1) {
+          line-height: 28px;
+          text-decoration: none; }
+          .section-recentProjects .recentProjects__description .recentProjects__demo .recentProjects__demo-paragraph .recentProjects__demoLink:nth-child(1),
+          .section-recentProjects .recentProjects__description .recentProjects__demo .recentProjects__demo-paragraph .recentProjects__codeLink:nth-child(1) {
             border-right: 1px solid #0593FB;
             margin-right: 10px;
             padding-right: 10px; }
             @media (min-width: 1020px) {
-              .section-recentProjects .recentProjects__description .recentProjects__demo .recentProjects__demo-paragraph .recentProjects__span:nth-child(1) {
+              .section-recentProjects .recentProjects__description .recentProjects__demo .recentProjects__demo-paragraph .recentProjects__demoLink:nth-child(1),
+              .section-recentProjects .recentProjects__description .recentProjects__demo .recentProjects__demo-paragraph .recentProjects__codeLink:nth-child(1) {
                 margin-right: 20px;
                 padding-right: 20px; } }
           @media (min-width: 1020px) {
-            .section-recentProjects .recentProjects__description .recentProjects__demo .recentProjects__demo-paragraph .recentProjects__span {
+            .section-recentProjects .recentProjects__description .recentProjects__demo .recentProjects__demo-paragraph .recentProjects__demoLink,
+            .section-recentProjects .recentProjects__description .recentProjects__demo .recentProjects__demo-paragraph .recentProjects__codeLink {
               font-size: 1.1rem;
               line-height: 32px; } }
     @media (min-width: 1020px) {
@@ -709,7 +714,7 @@ template {
     width: 32px; }
     .footer__img--margin {
       margin: 0 20px 0 20px; }
-  .footer__link {
+  .footer__link-mail {
     border-bottom: 2px solid #0593FB;
     color: #0593FB;
     cursor: pointer;
@@ -718,11 +723,11 @@ template {
     font-weight: 500;
     line-height: 24px;
     margin-bottom: 100px;
-    margin-top: 30px;
+    margin-top: 60px;
     padding-bottom: 10px;
     text-decoration: none; }
     @media (min-width: 1020px) {
-      .footer__link {
+      .footer__link-mail {
         border: 0;
         font-size: 1.2rem;
         line-height: 32px;
