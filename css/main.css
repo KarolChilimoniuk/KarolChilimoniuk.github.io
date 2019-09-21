@@ -401,7 +401,7 @@ template {
     margin-top: 10px; }
     .header .header__paragraph .header__link {
       cursor: pointer;
-      text-decoration: none; }
+      text-decoration: underline; }
     @media (min-width: 1020px) {
       .header .header__paragraph {
         font-size: 1.3rem;
@@ -648,7 +648,6 @@ template {
               line-height: 32px; } }
     @media (min-width: 1020px) {
       .section-recentProjects .recentProjects__description {
-        border: 1px solid #171F3F;
         -webkit-box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
                 box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
         width: 580px; } }
@@ -714,6 +713,8 @@ template {
     width: 32px; }
     .footer__img--margin {
       margin: 0 20px 0 20px; }
+  .footer__link-img {
+    cursor: pointer; }
   .footer__link-mail {
     border-bottom: 2px solid #0593FB;
     color: #0593FB;
