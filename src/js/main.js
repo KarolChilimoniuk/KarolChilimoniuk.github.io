@@ -1,22 +1,39 @@
 "use strict";
 
-// service worker registration - remove if you're not going to use it
-
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', function() {
-    navigator.serviceWorker.register('serviceworker.js').then(function(registration) {
-      // Registration was successful
-      console.log('ServiceWorker registration successful with scope: ', registration.scope);
-    }, function(err) {
-      // registration failed :(
-      console.log('ServiceWorker registration failed: ', err);
-    });
-  });
-}
-
-// place your code below
+const projectsSection = document.querySelector('.section-recentProjects');
 
 
-console.log(`Hello world!`);
+fetch('https://api.github.com/users/karolchilimoniuk/repos?sort=updated')
+  .then(resp => resp.json())
+  .then(resp => {
+    const repos = resp;
+    for (const repo of repos) {
+      const {
+        name,
+        description,
+        html_url,
+        homepage
+      } = repo;
+      projectsSection.innerHTML +=
+        `
+           <section class="recentProjects__description">
+             <img class="recentProjects__description-img" src="assets/svg/github.svg" alt="github">
+             <h4 class="recentProjects__description-title">${name}</h4>
+             <p class="recentProjects__description-paragraph">${description}</p>
+             <div class="recentProjects__demo">
+               <p class="recentProjects__demo-paragraph">
+                <a href="${homepage}" class="recentProjects__demoLink">
+                  <img class="recentProjects__demo-img" src="assets/svg/comp.svg" alt="computer">
+                  Demo
+                </a>
+                <a href="${html_url}" class="recentProjects__codeLink">
+                  <img class="recentProjects__demo-img" src="assets/svg/code.svg" alt="code">
+                  Github
+                </a>
+               </p>
+             </div>
+           </section>`
+    }
+  })
 
-
+console.log("Hello! My name is Charlie. I am aspiring front-end developer and I am still looking for new opportunities to cooperation. Don't hesitate to ask me 😉");
