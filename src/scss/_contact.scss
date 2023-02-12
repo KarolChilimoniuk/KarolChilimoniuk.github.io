@@ -1,5 +1,5 @@
 .footer {
-  background-color: $green;
+  background-color: $violet;
   border: 0;
   display: flex;
   flex-direction: column;
@@ -16,7 +16,7 @@
     line-height: 32px;
 
     &::before {
-      background-color: $violet;
+      background-color: $green;
       content: "";
       display: block;
       height: 4px;
@@ -72,7 +72,7 @@
   }
 
   &__link-mail {
-    color: $violet;
+    color: $green;
     cursor: pointer;
     display: inline-block;
     font-size: 0.9rem;
