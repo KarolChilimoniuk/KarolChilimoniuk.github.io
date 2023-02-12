@@ -1,19 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="eng">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
-    <meta name="description" content="Your project description" />
-    <meta property="og:title" content="" />
-    <meta property="og:description" content="" />
-    <meta property="og:url" content="" />
-
     <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta http-equiv="X-ua-compatible" content="ie=edge" />
+    <meta name="robots" content="index, follow" />
+    <title>Karol Chilimoniuk CV</title>
+    <meta name="author" content="Karol Chilimoniuk" />
+    <meta
+      name="keywords"
+      content="Karol Chilimoniuk, Karol Chilimoniuk CV, Web developer CV"
+    />
+    <meta
+      name="description"
+      content="This is Karol Chilimoniuk CV - Web Developer"
+    />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:title" content="Karol Chilimoniuk CV" />
+    <meta property="og:description" content="This is Karol Chilimoniuk CV" />
+    <meta property="og:image" content="" />
+    <link rel="icon" href="" type="image/png" />
+    <link rel="apple-touch-icon" htref="" />
+    <link rel="stylesheet" href="../scss/main.scss" />
+    <script src="../js/index.js" defer></script>
   </head>
+
   <body>
-    <div class="hello">
-      <h2>Hello</h2>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container-img">
+          <img
+            class="header__img"
+            src="../assets/img/myPhoto.jpg"
+            alt="Karol Chilimoniuk - author"
+          />
+        </div>
+        <h1 class="header__title">
+          Hello World! 🐕 My name is Karol and I'm an aspiring front-end
+          developer.
+        </h1>
+        <p class="header__paragraph">
+          If you are interested in checking my skills
+          <a class="header__link" href="#">click here</a>. Don't forget to see
+          <a class="header__link" href="#">my projects</a>. I'm still looking
+          for new challenges. If you want to cooperate -
+          <a class="header__link" href="#">contact me</a>.
+        </p>
+        <a class="header__link-mail" href="#"
+          >webdevkarolchilimoniuk@gmail.com</a
+        >
+      </header>
+      <section class="section section-skills">
+        <h2 class="skills__title">My skills</h2>
+        <hr />
+        <section class="skills__destription">
+          <h3 class="skills__description-title">Working knowledge</h3>
+          <ul class="skills__description-list">
+            <li class="skills__description-element">Semantic HTML 5</li>
+            <li class="skills__description-element">Flex</li>
+            <li class="skills__description-element">Grid</li>
+            <li class="skills__description-element">JS: DOM manipulation</li>
+            <li class="skills__description-element">JS: Local Storage</li>
+            <li class="skills__description-element">Markdown</li>
+            <li class="skills__description-element">Figma</li>
+            <li class="skills__description-element">SASS</li>
+            <li class="skills__description-element">Forms</li>
+          </ul>
+        </section>
+        <section class="skills__destription">
+          <h3 class="skills__description-title">Know something about</h3>
+          <ul class="skills__description-list">
+            <li class="skills__description-element">
+              PWA - Progressive web apps
+            </li>
+            <li class="skills__description-element">Git</li>
+            <li class="skills__description-element">Working with API</li>
+            <li class="skills__description-element">CSS Animations</li>
+            <li class="skills__description-element">JS ES6 and features</li>
+            <li class="skills__description-element">NPM scripts</li>
+            <li class="skills__description-element">Accessibility</li>
+          </ul>
+        </section>
+        <section class="skills__destription">
+          <h3 class="skills__description-title">Want to learn</h3>
+          <ul class="skills__description-list">
+            <li class="skills__description-element">React</li>
+            <li class="skills__description-element">Node.js</li>
+            <li class="skills__description-element">Gatsby</li>
+            <li class="skills__description-element">Server side rendering</li>
+            <li class="skills__description-element">Typescript</li>
+            <li class="skills__description-element">Websockets</li>
+            <li class="skills__description-element">Electron</li>
+          </ul>
+        </section>
+      </section>
+      <section
+        class="section section-recentProjects section-recentProjects--js"
+      ></section>
+      <footer class="footer">
+        <h2 class="footer__title">Contact me</h2>
+        <p class="footer__paragraph">
+          I'm willing to take new opportunities. If you are interested in
+          cooperation - write to me. My email adress is written below.
+        </p>
+        <img src="../assets/icons/facebook.svg" alt="facebook logo" />
+        <img src="../assets/icons/github2.svg" alt="github logo" />
+        <img src="../assets/icons/instagram.svg" alt="instagram logo" />
+        <a href="#" class="footer__link">webdevkarolchilimoniuk@gmail.com</a>
+      </footer>
     </div>
   </body>
 </html>
