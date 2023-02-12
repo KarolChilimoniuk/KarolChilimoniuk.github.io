@@ -23,8 +23,7 @@
     <meta property="og:image" content="" />
     <link rel="icon" href="" type="image/png" />
     <link rel="apple-touch-icon" htref="" />
-    <link rel="stylesheet" href="../scss/main.scss" />
-    <script src="../js/index.js" defer></script>
+    <script src="/js/index.js" defer></script>
   </head>
 
   <body>
@@ -43,72 +42,97 @@
         </h1>
         <p class="header__paragraph">
           If you are interested in checking my skills
-          <a class="header__link" href="#">click here</a>. Don't forget to see
-          <a class="header__link" href="#">my projects</a>. I'm still looking
-          for new challenges. If you want to cooperate -
-          <a class="header__link" href="#">contact me</a>.
+          <a class="header__link" href="#skills">click here</a>. Don't forget to
+          see <a class="header__link" href="#projects">my projects</a>. I'm
+          still looking for new challenges. If you want to cooperate -
+          <a class="header__link" href="#contact">contact me</a>.
         </p>
-        <a class="header__link-mail" href="#"
+        <a class="header__link-mail" href="#footer"
           >webdevkarolchilimoniuk@gmail.com</a
         >
       </header>
       <section class="section section-skills">
         <h2 class="skills__title">My skills</h2>
-        <hr />
-        <section class="skills__destription">
+        <section class="skills__description" id="skills">
           <h3 class="skills__description-title">Working knowledge</h3>
           <ul class="skills__description-list">
-            <li class="skills__description-element">Semantic HTML 5</li>
-            <li class="skills__description-element">Flex</li>
-            <li class="skills__description-element">Grid</li>
+            <li class="skills__description-element">JavaScript (with ES6)</li>
             <li class="skills__description-element">JS: DOM manipulation</li>
             <li class="skills__description-element">JS: Local Storage</li>
-            <li class="skills__description-element">Markdown</li>
-            <li class="skills__description-element">Figma</li>
-            <li class="skills__description-element">SASS</li>
-            <li class="skills__description-element">Forms</li>
+            <li class="skills__description-element">Typescript</li>
+            <li class="skills__description-element">React</li>
+            <li class="skills__description-element">Redux</li>
+            <li class="skills__description-element">Node.js</li>
+            <li class="skills__description-element">Express</li>
+            <li class="skills__description-element">REST Api</li>
+            <li class="skills__description-element">MongoDB</li>
+            <li class="skills__description-element">CSS and SCSS/SASS</li>
+            <li class="skills__description-element">Styled-compnents</li>
+            <li class="skills__description-element">Semantic HTML</li>
+            <li class="skills__description-element">Responsive Web Design</li>
+            <li class="skills__description-element">Git</li>
+            <li class="skills__description-element">Photoshop and Lightroom</li>
           </ul>
         </section>
-        <section class="skills__destription">
+        <section class="skills__description">
           <h3 class="skills__description-title">Know something about</h3>
           <ul class="skills__description-list">
             <li class="skills__description-element">
               PWA - Progressive web apps
             </li>
-            <li class="skills__description-element">Git</li>
-            <li class="skills__description-element">Working with API</li>
+            <li class="skills__description-element">Unit tests</li>
             <li class="skills__description-element">CSS Animations</li>
-            <li class="skills__description-element">JS ES6 and features</li>
-            <li class="skills__description-element">NPM scripts</li>
             <li class="skills__description-element">Accessibility</li>
+            <li class="skills__description-element">Material UI</li>
+            <li class="skills__description-element">Figma</li>
           </ul>
         </section>
-        <section class="skills__destription">
+        <section class="skills__description">
           <h3 class="skills__description-title">Want to learn</h3>
           <ul class="skills__description-list">
-            <li class="skills__description-element">React</li>
-            <li class="skills__description-element">Node.js</li>
+            <li class="skills__description-element">Next.js</li>
+            <li class="skills__description-element">SQL</li>
             <li class="skills__description-element">Gatsby</li>
-            <li class="skills__description-element">Server side rendering</li>
-            <li class="skills__description-element">Typescript</li>
             <li class="skills__description-element">Websockets</li>
-            <li class="skills__description-element">Electron</li>
+            <li class="skills__description-element">Docker</li>
           </ul>
         </section>
       </section>
       <section
         class="section section-recentProjects section-recentProjects--js"
-      ></section>
-      <footer class="footer">
+        id="projects"
+      >
+        <h2 class="projects__title">My projects</h2>
+      </section>
+      <footer class="footer" id="contact">
         <h2 class="footer__title">Contact me</h2>
         <p class="footer__paragraph">
           I'm willing to take new opportunities. If you are interested in
           cooperation - write to me. My email adress is written below.
         </p>
-        <img src="../assets/icons/facebook.svg" alt="facebook logo" />
-        <img src="../assets/icons/github2.svg" alt="github logo" />
-        <img src="../assets/icons/instagram.svg" alt="instagram logo" />
-        <a href="#" class="footer__link">webdevkarolchilimoniuk@gmail.com</a>
+        <div class="footer__icons">
+          <a
+            href="https://github.com/KarolChilimoniuk"
+            target="blank"
+            class="footer__link"
+            ><img
+              src="../assets/icons/github2.svg"
+              alt="github logo"
+              class="footer__img footer__link-img"
+          /></a>
+          <a
+            href="https://www.instagram.com/charlies.imagination/"
+            target="blank"
+            class="footer__link"
+            ><img
+              src="../assets/icons/instagram.svg"
+              alt="instagram logo"
+              class="footer__img footer__link-img"
+          /></a>
+        </div>
+        <a href="#" class="footer__link-mail"
+          >webdevkarolchilimoniuk@gmail.com</a
+        >
       </footer>
     </div>
   </body>

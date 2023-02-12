@@ -1,0 +1,93 @@
+.footer {
+  background-color: $violet;
+  border: 0;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-top: 30px;
+  padding-right: 20px;
+
+  &__title {
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 32px;
+
+    &::before {
+      background-color: $blue;
+      content: "";
+      display: block;
+      height: 4px;
+      margin-bottom: 15px;
+      width: 40px;
+
+      @media (min-width: 1020px) {
+        margin-bottom: 30px;
+        width: 80px;
+      }
+    }
+
+    @media (min-width: 1020px) {
+      font-size: 2rem;
+      line-height: 44px;
+    }
+  }
+
+  &__paragraph {
+    color: $white;
+    font-weight: 300;
+    font-size: 0.9rem;
+    line-height: 26px;
+    margin-bottom: 30px;
+
+    @media (min-width: 1020px) {
+      font-size: 1.2rem;
+      line-height: 36px;
+    }
+  }
+
+  &__icons {
+    display: flex;
+  }
+
+  &__img {
+    height: 32px;
+    margin-right: 20px;
+    width: 32px;
+
+    &--margin {
+      margin: 0 20px 0 20px;
+    }
+  }
+
+  &__link {
+    margin-right: 15px;
+    width: 35px;
+  }
+
+  &__link-img {
+    cursor: pointer;
+  }
+
+  &__link-mail {
+    color: $blue;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 100px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+
+    @media (min-width: 1020px) {
+      border: 0;
+      font-size: 1.2rem;
+      line-height: 32px;
+      margin-top: 10px;
+    }
+  }
+}

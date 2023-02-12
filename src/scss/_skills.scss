@@ -1,0 +1,107 @@
+.section-skills {
+  display: flex;
+  flex-direction: column;
+  margin-top: 140px;
+  max-width: 1187px;
+  padding-left: 30px;
+  width: 100%;
+
+  .skills__title {
+    text-align: center;
+    font-weight: 600;
+    line-height: 32px;
+    margin-bottom: 0;
+
+    @media (min-width: 1024px) {
+      font-size: 2.25rem;
+      line-height: 48px;
+      text-align: left;
+    }
+  }
+
+  hr {
+    background-color: #cbd2d9;
+    border: 0;
+    height: 2px;
+    margin: 0;
+    margin-top: 20px;
+    opacity: 0.5;
+    width: 92%;
+  }
+
+  .skills__description {
+    align-items: start;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 30px;
+
+    &::before {
+      background-color: #0f0;
+      content: "";
+      display: inline-block;
+      height: 3px;
+      width: 40px;
+
+      @media (min-width: 1024px) {
+        position: absolute;
+      }
+    }
+
+    .skills__description-title {
+      margin-top: 10px;
+      font-size: 1.2rem;
+      font-weight: 600;
+      line-height: 32px;
+
+      @media (min-width: 1024px) {
+        font-size: 2rem;
+        line-height: 44px;
+        margin-left: 0;
+        width: 60%;
+      }
+    }
+
+    .skills__description-list {
+      list-style: none;
+      padding: 0;
+
+      .skills__description-element {
+        font-size: 0.75rem;
+        line-height: 36px;
+        width: 100%;
+
+        &::before {
+          content: url(../assets/icons/check.svg);
+          margin-right: 10px;
+        }
+
+        @media (min-width: 1024px) {
+          font-size: 1.1rem;
+          line-height: 40px;
+        }
+      }
+
+      @media (min-width: 1024px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .column2 {
+        column-count: 2;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      grid-template-columns: repeat(2, minmax(349px, 1fr));
+      grid-template-rows: auto;
+      margin-top: 100px;
+      position: relative;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    margin-right: 128px;
+    max-width: 1184px;
+    padding-left: 128px;
+  }
+}

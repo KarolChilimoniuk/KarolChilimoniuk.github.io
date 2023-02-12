@@ -1,13 +1,49 @@
-@import "~normalize.css";
-
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,600,700&display=swap");
+@import "_normalize";
 @import "_variables";
-@import "modules/hello.scss";
+@import "_wrapper-grid";
+@import "_header";
+@import "_skills";
+@import "_recentProjects";
+@import "_contact";
+
+html {
+  box-sizing: border-box;
+  color: $violet;
+  font-family: Poppins;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 
 body {
-  background: $wtf;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
+  background: $white;
+}
+
+.wrapper {
+  box-sizing: border-box;
+  width: 100%;
+
+  @media (min-width: 1020px) {
+    border: 20px solid $violet;
+  }
+}
+
+h1,
+h2,
+h3 {
+  color: $violet;
+}
+
+p,
+li {
+  color: $blackGrey;
+
+  @media (min-width: 1020px) {
+    color: $violet;
+  }
 }

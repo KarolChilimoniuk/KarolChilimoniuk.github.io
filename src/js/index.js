@@ -1,4 +1,6 @@
-"use strict";
+import "../scss/main.scss";
+
+("use strict");
 
 class App {
   constructor() {
@@ -16,10 +18,11 @@ class App {
             description &&
             repo.private === false &&
             repo.name !== "wtf-crew" &&
+            repo.name !== "KarolChilimoniuk" &&
             repo.name !== "weather-app-with-bcknd"
           ) {
             this.reposSection.innerHTML += `<section class="recentProjects__description">
-            <img class="recentProjects__description-img" src="assets/svg/github.svg" alt="github">
+            <img class="recentProjects__description-img" src="../assets/icons/github.svg" alt="github">
             <h4 class="recentProjects__description-title">${name}</h4>
             <p class="recentProjects__description-paragraph">${description}</p>
             <div class = "recentProjects__demo">
@@ -27,12 +30,12 @@ class App {
                 ${
                   homepage &&
                   `<a href="${homepage}" class="recentProjects__demoLink" target="_blank" title="Project's demo.">
-                  <img class="recentProjects__demo-img" src="assets/svg/comp.svg" alt="computer.">
+                  <img class="recentProjects__demo-img" src="../assets/icons/comp.svg" alt="computer.">
                    Demo
                 </a>`
                 }
                 <a href="${html_url}" class="recentProjects__codeLink" target="_blank" title="Project's git.">
-                  <img class="recentProjects__demo-img" src="assets/svg/code.svg"   alt="code.">
+                  <img class="recentProjects__demo-img" src="../assets/icons/code.svg"   alt="code.">
                    Github
                 </a>
               </p>
