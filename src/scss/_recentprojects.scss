@@ -106,9 +106,14 @@
       .recentProjects__demo-paragraph {
         display: flex;
         justify-content: flex-end;
-        padding-right: 30px;
+        padding-right: 10px;
 
         .recentProjects__demo-img {
+          margin-right: 10px;
+          width: 30px;
+        }
+
+        .recentProjects__demo-span {
           margin-right: 10px;
         }
 
@@ -125,7 +130,7 @@
           &:nth-child(1) {
             border-right: 1px solid $blue;
             margin-right: 10px;
-            padding-right: 10px;
+            padding-right: 20px;
 
             @media (min-width: 1020px) {
               margin-right: 20px;
