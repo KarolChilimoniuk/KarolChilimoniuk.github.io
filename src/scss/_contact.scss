@@ -1,5 +1,5 @@
 .footer {
-  background-color: $violet;
+  background-color: $darkGreen;
   border: 0;
   display: flex;
   flex-direction: column;
@@ -72,7 +72,7 @@
   }
 
   &__link-mail {
-    color: $green;
+    color: $violet;
     cursor: pointer;
     display: inline-block;
     font-size: 0.9rem;

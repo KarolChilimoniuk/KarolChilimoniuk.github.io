@@ -9,7 +9,7 @@
 
 html {
   box-sizing: border-box;
-  color: $violet;
+  color: $darkGreen;
   font-family: Poppins;
   font-size: 16px;
 }
@@ -29,14 +29,14 @@ body {
   width: 100%;
 
   @media (min-width: 1020px) {
-    border: 20px solid $violet;
+    border: 20px solid $darkGreen;
   }
 }
 
 h1,
 h2,
 h3 {
-  color: $violet;
+  color: $darkGreen;
 }
 
 p,
@@ -44,6 +44,6 @@ li {
   color: $blackGrey;
 
   @media (min-width: 1020px) {
-    color: $violet;
+    color: $darkGreen;
   }
 }
